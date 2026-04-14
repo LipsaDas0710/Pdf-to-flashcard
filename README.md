@@ -1,47 +1,44 @@
-# Flashcard App
+# 📚 PDF to Flashcard Generator
 
-A starter full-stack project with:
+An AI-powered web application that converts PDFs into interactive flashcards for efficient learning.
 
-- `frontend/`: HTML + Tailwind CSS (CDN) + vanilla JavaScript
-- `backend/`: Express API skeleton for flashcard generation
+## 🚀 Features
 
-## Project Structure
+- 📄 Upload PDF files
+- 🤖 AI-generated questions:
+  - MCQs
+  - Fill in the blanks
+  - Short answers
+- 🎴 Interactive flashcards with flip animation
+- ✅ Mark answers as correct or incorrect
+- 📊 Track progress
+- 🧠 Difficulty classification:
+  - Hard
+  - Medium
+  - Easy
 
-```
-flashcard-app/
-├── frontend/
-│   ├── index.html
-│   ├── styles.css
-│   └── script.js
-├── backend/
-│   ├── server.js
-│   ├── routes/
-│   │   └── flashcardRoutes.js
-│   ├── controllers/
-│   │   └── flashcardController.js
-│   ├── models/
-│   │   └── Flashcard.js
-│   └── utils/
-│       └── pdfParser.js
-├── package.json
-└── README.md
-```
+## 🛠 Tech Stack
 
-## Frontend Features
+**Frontend**
+- HTML
+- Tailwind CSS
+- JavaScript
 
-- Dark mode by default
-- Gradient background (black to blue/purple)
-- Glassmorphism UI
-- Landing section with hero + Upload button
-- Hidden upload modal with drag-and-drop UI
-- Hidden flashcard section shown after PDF upload
-- Smooth transitions and hover effects
+**Backend**
+- Node.js
+- Express.js
+- pdf-parse
+- Google Gemini API
 
-## Run Backend
+## ⚙️ How It Works
+
+1. Upload a PDF
+2. Backend extracts text
+3. Gemini AI generates questions
+4. Flashcards are displayed for study
+
+## 📦 Installation
 
 ```bash
-npm install
-npm start
-```
-
-Server runs on `http://localhost:5000`.
+git clone https://github.com/LipsaDas0710/Pdf-to-flashcard.git
+cd Pdf-to-flashcard
