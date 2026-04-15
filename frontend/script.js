@@ -229,9 +229,13 @@ async function uploadPdfAndGenerateQuestions() {
   try {
     const formData = new FormData();
     formData.append("file", selectedPdfFile);
+    // const apiEndpoints = [
+    //   "http://localhost:5000/api/upload-pdf",
+    //   "http://localhost:5000/api/flashcards/upload-pdf"
+    // ];
     const apiEndpoints = [
-      "http://localhost:5000/api/upload-pdf",
-      "http://localhost:5000/api/flashcards/upload-pdf"
+      "https://pdf-to-flashcard-production.up.railway.app/api/upload-pdf",
+      "https://pdf-to-flashcard-production.up.railway.app/api/flashcards/upload-pdf"
     ];
 
     let data = null;
